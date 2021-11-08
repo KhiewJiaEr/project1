@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkbox</title>
+<script>
+function confirm(){
+	if(document.order.topping[3].checked == 0)
+	{
+	alert("Are you sure don't want beetroot and mango??!");
+	}
+	var y = "Your address ";
+	y = y + ordar.address.value;
+	y = y + ". Yout topping are ";
+	
+	if(document.order.topping[0].checked){
+	y = y + "olives, ";
+	}
+	if(document.order.topping[1].checked){
+	y = y + "Spicy Chicken, ";
+	}
+	if(document.order.topping[2].checked){
+	y = y + "Spam, ";
+	}
+	if(document.order.topping[3].checked == 1){
+	y = y + "beetroot and Mango. ";
+	}	
+	
+	alert(y);
+}
+</script>
+</head>
+<body>
+
+<form name="order">
+<input type="text" name="address" size="80" />
+<h3>Choose Topping</h3>
+<input type="checkbox" name="topping" />Olives<br />
+<input type="checkbox" name="topping" />Spicy Chicken"<br />
+<input type="checkbox" name="topping" />Spam<br />
+<input type="checkbox" name="topping" />Beetroot and Mango<br />
+<input type="button" value="Comfirm order" onclick="confirm()" />
+</form>
+
+</body>
+</html>
